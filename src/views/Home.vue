@@ -52,7 +52,7 @@ We champion the rights and interests of children worldwide, putting the most vul
     </div>
   </b-row>
   </b-container><!-- end of volunteer -->
-  <b-container fluid class="bv-example-row section">
+  <b-container fluid class="bv-example-row" style="background-color: #F3F2EE; padding-top: 20px;">
       <h3 class="text-center">Previous Events</h3>
       <br>
       <carousels></carousels>
@@ -73,31 +73,40 @@ We champion the rights and interests of children worldwide, putting the most vul
   </b-row>
   </b-container>
   </b-container>
-<b-container fluid class="bv-example-row text-white" style="background-color: #232323">
+<b-container fluid class="bv-example-row text-white" style="background-color: #232323; padding-top: 25px;">
  <b-container>
         <b-row>
-         <b-col sm="4" class="">
-             <ul>
-                 <li>Test</li>
-                 <li>Test</li>
-                 <li>Test</li>
-                 <li>Test</li>
+         <b-col sm="3" class="footer-text">
+             <img src="../assets/life.png" alt="" width="100px">
+             <br>
+             <br>
+             <p>Across Nigeria, too many children start life at a disadvantage simply because of who they are and where they come from. </p>
+         </b-col>
+          <b-col sm="3">
+              <h4>About Us</h4>
+               <ul class="footer-text">
+                 <li><b-link to="about">McBeth Lifefix Foundation</b-link></li>
+                 <li><b-link to="about">Awards & Recognition</b-link></li>
+                 <li><b-link to="about">Media & News</b-link></li>
+                 <li><b-link to="about">Our Partners</b-link></li>
              </ul>
          </b-col>
-          <b-col sm="4">
-               <ul>
-                 <li>Test</li>
-                 <li>Test</li>
-                 <li>Test</li>
-                 <li>Test</li>
+          <b-col sm="3">
+              <h4>Quick Links</h4>
+               <ul class="footer-text">
+                 <li><b-link to="about">About MLFF</b-link></li>
+                 <li><b-link to="about">Contact Us</b-link></li>
+                 <li><b-link to="about">Donate</b-link></li>
+                 <li><b-link to="about">Volunteer</b-link></li>
              </ul>
          </b-col>
-          <b-col sm="4">
-               <ul>
-                 <li>Test</li>
-                 <li>Test</li>
-                 <li>Test</li>
-                 <li>Test</li>
+         <b-col sm="3">
+              <h4>Quick Links</h4>
+               <ul class="footer-text">
+                 <li><b-link to="about">About MLFF</b-link></li>
+                 <li><b-link to="about">Contact Us</b-link></li>
+                 <li><b-link to="about">Donate</b-link></li>
+                 <li><b-link to="about">Volunteer</b-link></li>
              </ul>
          </b-col>
     </b-row>
@@ -167,5 +176,33 @@ a#joinUs{
     float: left;
     width: 20%;
     font-size: 20px;
+}
+
+.footer-text{
+     color: rgb(194, 194, 194);
+     font-weight: lighter;
+}
+
+.footer-text > p{
+    font-size: 14px;
+}
+
+.footer-text > li{
+     list-style-type: none !important;
+}
+
+.footer-text > li> a{
+    font-size: 14px;
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+.footer-text > li > a:hover {
+    color: #D344AD;
+}
+
+ul.footer-text{
+    margin: 0;
+    padding: 0;
 }
 </style>

@@ -25,7 +25,7 @@
         <b-nav-item>
           <b-link to="about">Contact Us</b-link>
         </b-nav-item>
-        <b-nav-item>
+        <b-nav-item class="donateButton">
           <b-link to="about">Donate</b-link>
         </b-nav-item>
       </b-navbar-nav>
@@ -46,9 +46,24 @@ export default {
 }
 .navbar{
     padding: 0.5em 5em !important;
+    margin-right: 30px;
+    /* padding-right: 20px; */
 }
 
 .nav-link{
   color: #63028F !important;
+}
+
+.donateButton{
+  background-color: #D344AD;
+  padding:0 10px;
+}
+
+.donateButton:hover{
+  background-color: #63028F;
+}
+
+.donateButton > .nav-link> a{
+  color: #fff !important;
 }
 </style>
