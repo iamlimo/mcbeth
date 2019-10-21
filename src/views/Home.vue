@@ -1,7 +1,18 @@
 <template>
 <div>
    <HeaderMenu></HeaderMenu> 
-  <carousel></carousel>
+ <div class="carol" style="">
+
+     <span id="text">
+         <h2 style="color: #63028F">WE DO WHATEVER IT TAKES</h2>
+        <h2>TO SAVE CHILDREN</h2>
+        <h2>AND YOU CAN HELP </h2>
+     </span>
+     <br>
+     <br>
+     <p class="text-left"><a href="https://forms.gle/RZgRFSNFucWvVeqG8" id="donate">Donate Now</a></p>
+      
+ </div>
   <b-container fluid class="section" style="background-color: #F3F2EE">
   <b-row>
     <div class="mx-auto" style="width: 600px;">
@@ -119,13 +130,13 @@ We champion the rights and interests of children worldwide, putting the most vul
 
 <script>
 import HeaderMenu from '../components/HeaderMenu.vue'
-import Carousel from '../components/Carousel.vue'
+//import Carousel from '../components/Carousel.vue'
 import carousels from '../components/EventSlider.vue'
 export default {
     name: 'Home',
     components: {
         HeaderMenu,
-        Carousel,
+        //Carousel,
         carousels
     }
 }
@@ -134,6 +145,22 @@ export default {
 <style>
 .nav-link > a{
     color: #63028F !important;
+}
+
+.carol{
+    height: 421px;
+    background-image: url('../assets/school-village.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    padding: 5em 2em;
+}
+
+.carol > #text > h2{
+    font-weight: 900;
+    background-color: #fff;
+    padding: 6px 9px;
+    width: 40%;
 }
 .section{
     /* background-color: #F3F2EE; */
@@ -144,9 +171,10 @@ export default {
 .white{
     background-color: #fff;
 }
-#joinUs{
-    background-color: #63028F;
+#joinUs, #donate{
+    background-color: #D344AD;
     padding: 0.5em 2em;
+    
 }
 
 a#joinUs{
@@ -154,15 +182,20 @@ a#joinUs{
     text-decoration: none;
 }
 
-#joinUs:hover{
-    background-color: #D344AD;
+a#donate{
+ font-weight: 900;
+ color: #fff;
+}
+
+#joinUs:hover, #donate:hover{
+    background-color: #63028F ;
 }
 .content{
     padding: 5em 2em; 
 }
 
 .volunteer{
-    background-image: url('../assets/children-fund-NEW.png');
+    /* background-image: url('../assets/children-fund-NEW.png'); */
      background-repeat: no-repeat;
      height: 300px;
      background-position: center;
