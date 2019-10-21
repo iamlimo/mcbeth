@@ -48,7 +48,7 @@ We champion the rights and interests of children worldwide, putting the most vul
        <h3 class="text-center text-white">Join us. Become a volunteer</h3>
        <p class="text-center text-white">Volunteering can be personally rewarding and helps you 'give something back' to your community. Join us to help give children a better future. Become a McBeth Lifefix Foundation volunteer today.</p>
        <br>
-       <p class="text-center"><a href="" id="joinUs">Join Us</a></p>
+       <p class="text-center"><a href="https://forms.gle/RZgRFSNFucWvVeqG8" id="joinUs">Join Us</a></p>
     </div>
   </b-row>
   </b-container><!-- end of volunteer -->

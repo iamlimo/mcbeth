@@ -7,14 +7,14 @@
       controls
       indicators
       background="#ababab"
-      img-width="1024"
-      img-height="480"
+      img-width="200"
+      img-height="200"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
       <!-- Text slides with image -->
-      <b-carousel-slide img-src="../assets/life.png">
+      <b-carousel-slide img-src="https://raw.githubusercontent.com/iamlimo/mcbeth/master/src/assets/children-fund-NEW.png">
         <h1>Hello world!</h1>
       </b-carousel-slide>
 
@@ -33,9 +33,9 @@
         <template v-slot:img>
           <img
             class="d-block img-fluid w-100"
-            width="900"
+            width="9100"
             height="480"
-            src="../assets/children.jpg"
+            src="https://picsum.photos/1024/480/?image=58"
             alt="image slot"
           >
            
