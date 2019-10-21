@@ -14,7 +14,7 @@
       @sliding-end="onSlideEnd"
     >
       <!-- Text slides with image -->
-      <b-carousel-slide img-src="https://raw.githubusercontent.com/iamlimo/mcbeth/master/src/assets/children-fund-NEW.png">
+      <b-carousel-slide img-src="https://raw.githubusercontent.com/iamlimo/mcbeth/master/src/assets/children-fund.png">
         <h1>Hello world!</h1>
       </b-carousel-slide>
 
