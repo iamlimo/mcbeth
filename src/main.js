@@ -6,11 +6,11 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import BootstrapVue from 'bootstrap-vue'
 import router from './router'
 import Unicon from 'vue-unicons'
-import { uniFacebook, uniTwitter, uniInstagramAlt  } from 'vue-unicons/src/icons'
+import { uniFacebook, uniTwitter, uniInstagramAlt,  uniMapMarker, uniPhone } from 'vue-unicons/src/icons'
 
 Vue.config.productionTip = false
 
-Unicon.add([uniFacebook, uniTwitter, uniInstagramAlt ])
+Unicon.add([uniFacebook, uniTwitter, uniInstagramAlt,  uniMapMarker, uniPhone ])
 Vue.use(Unicon)
 Vue.use(BootstrapVue)
 new Vue({

@@ -1,18 +1,17 @@
 <template>
 <div>
    <HeaderMenu></HeaderMenu> 
- <div class="carol" style="">
+ <b-container fluid="" class="carol" style="">
 
      <span id="text">
-         <h2 style="color: #63028F">WE DO WHATEVER IT TAKES</h2>
+         <h2 style="color: #63028F;">WE DO WHATEVER IT TAKES</h2>
         <h2>TO SAVE CHILDREN</h2>
         <h2>AND YOU CAN HELP </h2>
      </span>
      <br>
-     <br>
-     <p class="text-left"><a href="https://forms.gle/RZgRFSNFucWvVeqG8" id="donate">Donate Now</a></p>
+     <p class="text-left"><a href="https://forms.gle/RZgRFSNFucWvVeqG8" target="_blank" id="donate">Donate Now</a></p>
       
- </div>
+ </b-container>
   <b-container fluid class="section" style="background-color: #F3F2EE">
   <b-row>
     <div class="mx-auto" style="width: 600px;">
@@ -23,13 +22,13 @@ Millions of children are dying from preventable causes, face poverty, violence, 
 <p> They are caught up in war zones and disasters they did nothing to create. And they are denied an education and other basic rights owed to them.
 All children deserve better.
 We champion the rights and interests of children worldwide, putting the most vulnerable children first. </p>
-        <p class="text-center"><a href="" id="joinUs">Join Us</a></p>
+        <p class="text-center"><a href="https://forms.gle/RZgRFSNFucWvVeqG8" target="_blank" id="joinUs">Join Us</a></p>
     </div>
   </b-row>
   </b-container><!-- End of about us -->
 
   <b-container class="bv-example-row">
-  <div class="mx-auto section" style="width: 800px;">
+  <div class="mx-auto section part" style="width: 800px;">
       <h3 class="text-center">Be Part Of Us</h3>
       <br>
       <br>
@@ -68,68 +67,15 @@ We champion the rights and interests of children worldwide, putting the most vul
       <br>
       <carousels></carousels>
   </b-container>
-  <b-container fluid class="text-white" style="background-color: #1D1D1D; padding: 1em 0;">
-  <b-container>
-      <b-row>
-   <b-col sm="8" class="">
-       <h4>Together we are stonger. Join the conversation</h4>
-   </b-col>
-   <b-col sm="4" class="">
-       <ul class="social">
-           <li><unicon name="facebook" fill="#3b5999"></unicon></li>
-           <li><unicon name="twitter" fill="#55acee"></unicon> </li>
-           <li><unicon name="instagram-alt" fill="#e4405f"></unicon></li>
-       </ul>
-   </b-col>
-  </b-row>
-  </b-container>
-  </b-container>
-<b-container fluid class="bv-example-row text-white" style="background-color: #232323; padding-top: 25px;">
- <b-container>
-        <b-row>
-         <b-col sm="3" class="footer-text">
-             <img src="../assets/life.png" alt="" width="100px">
-             <br>
-             <br>
-             <p>Across Nigeria, too many children start life at a disadvantage simply because of who they are and where they come from. </p>
-         </b-col>
-          <b-col sm="3">
-              <h4>About Us</h4>
-               <ul class="footer-text">
-                 <li><b-link to="about">McBeth Lifefix Foundation</b-link></li>
-                 <li><b-link to="about">Awards & Recognition</b-link></li>
-                 <li><b-link to="about">Media & News</b-link></li>
-                 <li><b-link to="about">Our Partners</b-link></li>
-             </ul>
-         </b-col>
-          <b-col sm="3">
-              <h4>Quick Links</h4>
-               <ul class="footer-text">
-                 <li><b-link to="about">About MLFF</b-link></li>
-                 <li><b-link to="about">Contact Us</b-link></li>
-                 <li><b-link to="about">Donate</b-link></li>
-                 <li><b-link to="about">Volunteer</b-link></li>
-             </ul>
-         </b-col>
-         <b-col sm="3">
-              <h4>Quick Links</h4>
-               <ul class="footer-text">
-                 <li><b-link to="about">About MLFF</b-link></li>
-                 <li><b-link to="about">Contact Us</b-link></li>
-                 <li><b-link to="about">Donate</b-link></li>
-                 <li><b-link to="about">Volunteer</b-link></li>
-             </ul>
-         </b-col>
-    </b-row>
- </b-container>
-  </b-container>
-
+  
+<footermenu></footermenu>
 </div>
 </template>
 
 
 <script>
 import HeaderMenu from '../components/HeaderMenu.vue'
+import footermenu from '../components/Footer.vue'
 //import Carousel from '../components/Carousel.vue'
 import carousels from '../components/EventSlider.vue'
 export default {
@@ -137,7 +83,8 @@ export default {
     components: {
         HeaderMenu,
         //Carousel,
-        carousels
+        carousels,
+        footermenu
     }
 }
 </script>
@@ -185,6 +132,7 @@ a#joinUs{
 a#donate{
  font-weight: 900;
  color: #fff;
+ padding: 1em 2em;
 }
 
 #joinUs:hover, #donate:hover{
@@ -195,7 +143,7 @@ a#donate{
 }
 
 .volunteer{
-    /* background-image: url('../assets/children-fund-NEW.png'); */
+    background-image: url('../assets/donate-join.png');
      background-repeat: no-repeat;
      height: 300px;
      background-position: center;
@@ -204,38 +152,22 @@ a#donate{
 
 }
 
-.social > li {
-    display: block;
-    float: left;
-    width: 20%;
-    font-size: 20px;
-}
+@media (max-width: 600px) {
+    .part{
+        width: auto !important;
+    }
+    .navbar{
+        padding: 0.3em 0.3em 0.3em 0.3em !important;
+    }
 
-.footer-text{
-     color: rgb(194, 194, 194);
-     font-weight: lighter;
+    .carol > #text > h2{
+    font-weight: 600;
+    background-color: #fff;
+    padding: 6px 9px;
+    width: 90%;
 }
-
-.footer-text > p{
-    font-size: 14px;
+.carol{
+    padding-top: 0.4em
 }
-
-.footer-text > li{
-     list-style-type: none !important;
-}
-
-.footer-text > li> a{
-    font-size: 14px;
-    text-decoration: none;
-    color: rgb(194, 194, 194);
-}
-
-.footer-text > li > a:hover {
-    color: #D344AD;
-}
-
-ul.footer-text{
-    margin: 0;
-    padding: 0;
 }
 </style>
